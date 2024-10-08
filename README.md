@@ -20,6 +20,10 @@ yarn install
 bun install
 ```
 
+## How to configure component testing with cypress
+[view detailed guide here](https://www.codybontecou.com/cypress-component-testing-with-nuxt-3.html)
+
+
 ## Development Server
 
 Start the development server on `http://localhost:3000`:
