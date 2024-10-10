@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  test_pushed_code:
+  Test Code:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +23,7 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ik
 
       - name: Run tests
         run: npm test
