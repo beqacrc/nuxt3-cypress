@@ -1,4 +1,3 @@
-// cypress.config.ts
 import { defineConfig } from "cypress";
 import viteConfig from "./vite.config.cypress.component.js";
 

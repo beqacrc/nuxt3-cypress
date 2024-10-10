@@ -11,8 +11,7 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy:run:component": "cypress run --component",
-    "cy:run:e2e": "cypress run --e2e",
-    "cy:run:component:report": "cypress run --component --reporter mochawesome --reporter-options reportDir='cypress/results',overwrite=false,html=true,json=false"
+    "test": "npm run cy:run:component"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^5.1.4",

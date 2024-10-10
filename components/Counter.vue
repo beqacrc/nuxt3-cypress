@@ -14,13 +14,13 @@ const modelValue = defineModel<number>({
 });
 
 const increment = () => {
-  if (modelValue.value < (props.max ?? Infinity)) {
+  if (modelValue.value < props.max) {
     modelValue.value++;
   }
 };
 
 const decrement = () => {
-  if (modelValue.value > (props.min ?? -Infinity)) {
+  if (modelValue.value > props.min) {
     modelValue.value--;
   }
 };
