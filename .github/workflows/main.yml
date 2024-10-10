@@ -7,23 +7,23 @@ on:
   pull_request:
     branches:
       - main
-  
+
 jobs:
   test_pushed_code:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-      uses: actions/setup-node@v1
-      with:
-        node-version: 20.x
-    - name: Install dependencies
-      run: npm install
-    - name: Run tests
-      run: npm test
-    - name: Run linter
-      run: npm run lint
-    - name: Run build
-      run: npm run build
-    - name: Run integration tests
-      run: npm run test:integration
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 20.x
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+      - name: Run linter
+        run: npm run lint
+      - name: Run build
+        run: npm run build
+      - name: Run integration tests
+        run: npm run test:integration
