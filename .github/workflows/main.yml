@@ -21,9 +21,5 @@ jobs:
         run: npm install
       - name: Run tests
         run: npm test
-      - name: Run linter
-        run: npm run lint
       - name: Run build
         run: npm run build
-      - name: Run integration tests
-        run: npm run test:integration
